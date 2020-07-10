@@ -8,6 +8,7 @@
  */
 const ora = require('ora');
 const execa = require('execa');
+const alert = require('cli-alerts');
 const to = require('await-to-js').default;
 const scarfPackage = require('scarf-package');
 const handleError = require('cli-handle-error');
@@ -65,8 +66,15 @@ const spinner = ora({text: ``});
 	const [err, res] = await to(
 		execa(`npm`, [`version`, `patch`, `-m="🚀 RELEASE: patch"`])
 	);
+	const [err, res] = await to(execa(`npm`, [`publish`]));
 	handleError(`Patch release`, err);
-	spinner.start(`${y`PATCH`} released…`);
+	spinner.start(`${y`PATCH`} released`);
+
+	alert({
+		type: `success`,
+		name: `ALL DONE`,
+		msg: ``
+	});
 
 	debug && log(flags);
 })();
