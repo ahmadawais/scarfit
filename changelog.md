@@ -32,11 +32,27 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [1.2.0](https://github.com/ahmadawais/scarfit/compare/1.1.1...1.2.0)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 API auth [`f55b563`](https://github.com/ahmadawais/scarfit/commit/f55b563d1e2bc8292825321a5c93abec83a29bec) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.1.1](https://github.com/ahmadawais/scarfit/compare/1.1.0...1.1.1)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 RM Extraneous [`407b5c2`](https://github.com/ahmadawais/scarfit/commit/407b5c28f96f0067527dca0f994e525b05dfe1bf) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`7ae0edb`](https://github.com/ahmadawais/scarfit/commit/7ae0edbefc6977bdb595e2abaf04b05de0c23420) <br>
 
 <br>
 
