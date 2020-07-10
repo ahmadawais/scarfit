@@ -17,6 +17,40 @@ npx scarfit
 
 <br>
 
+[![⚙️](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/usage.png)](./../../)
+
+## Usage
+
+```sh
+scarfit <command> [option]
+```
+
+#### ❯ COMMANDS
+
+```sh
+help  Print help info
+```
+
+#### ❯ OPTIONS
+
+```sh
+-n, --name     Name of the npm package
+-d, --add      Should add package on scarf.sh Default: true
+--no-add       Should not add package on scarf.sh Default: false
+-d, --dep      Should install scarf dependency Default: true
+--no-dep       Should not install scarf dependency Default: false
+-g, --git      Should git commit/push Default: true
+--no-git       Should not git commit/push Default: false
+-r, --release  Release a patch on npm Default: true
+--no-release   Don't release a patch on npm Default: false
+-p, --public   Should npm release have --access public? Default: false
+-c, --clear    Clear the console Default: true
+-d, --debug    Print debug info Default: false
+-v, --version  Print CLI version Default: false
+```
+
+<br>
+
 [![📝](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/log.png)](changelog.md)
 
 ## Changelog

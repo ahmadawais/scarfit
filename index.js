@@ -81,10 +81,10 @@ const spinner = ora({text: ``});
 
 	// 2. Add scarf dependency.
 	if (dep) {
-		spinner.start(`${y`SCARF`} dependency adding…`);
+		spinner.start(`${y`DEPENDENCY`} @scarf/scarf adding…`);
 		[err, res] = await to(execa(`npm`, [`i`, `@scarf/scarf`]));
 		handleError(`SCARF dependency`, err);
-		spinner.succeed(`${g`SCARF`} dependency added`);
+		spinner.succeed(`${g`DEPENDENCY`} @scarf/scarf added`);
 	}
 
 	// 3. Git commit push.
