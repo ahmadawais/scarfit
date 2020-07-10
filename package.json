@@ -6,6 +6,7 @@
 	"bin": {
 		"scarfit": "index.js"
 	},
+	"repository": "ahmadawais/scarfit",
 	"author": {
 		"name": "Ahmad Awais",
 		"email": "me@AhmadAwais.com",
@@ -15,13 +16,19 @@
 		"format": "prettier --write \"./**/*.{js,json}\""
 	},
 	"dependencies": {
+		"await-to-js": "^2.1.1",
 		"chalk": "^4.1.0",
 		"cli-alerts": "^1.2.1",
 		"cli-handle-error": "^4.4.0",
 		"cli-handle-unhandled": "^1.1.0",
 		"cli-meow-help": "^1.0.4",
+		"cli-should-cancel": "^1.0.0",
 		"cli-welcome": "^2.2.1",
-		"meow": "^7.0.1"
+		"enquirer": "^2.3.6",
+		"execa": "^4.0.3",
+		"meow": "^7.0.1",
+		"ora": "^4.0.4",
+		"scarf-package": "^1.0.0"
 	},
 	"devDependencies": {
 		"prettier": "^2.0.5"

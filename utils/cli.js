@@ -2,6 +2,11 @@ const meow = require('meow');
 const meowHelp = require('cli-meow-help');
 
 const flags = {
+	name: {
+		type: `string`,
+		alias: `n`,
+		desc: `Name of the npm package`
+	},
 	clear: {
 		type: `boolean`,
 		default: true,
@@ -22,9 +27,7 @@ const flags = {
 };
 
 const commands = {
-	help: {
-		description: `Print help info`
-	}
+	help: {description: `Print help info`}
 };
 
 const helpText = meowHelp({
