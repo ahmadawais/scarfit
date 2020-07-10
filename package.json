@@ -1,7 +1,7 @@
 {
 	"name": "scarfit",
 	"description": "Add scarf analytics to a Node pkg, git commit/push, and release an npm patch",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"bin": {
 		"scarfit": "index.js"
