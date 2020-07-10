@@ -1,0 +1,29 @@
+{
+	"name": "scarfit",
+	"description": "Add scarf analytics to a Node pkg, git commit/push, and release an npm patch",
+	"version": "0.0.1",
+	"license": "MIT",
+	"bin": {
+		"scarfit": "index.js"
+	},
+	"author": {
+		"name": "Ahmad Awais",
+		"email": "me@AhmadAwais.com",
+		"url": "https://twitter.com/MrAhmadAwais/"
+	},
+	"scripts": {
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"dependencies": {
+		"chalk": "^4.1.0",
+		"cli-alerts": "^1.2.1",
+		"cli-handle-error": "^4.4.0",
+		"cli-handle-unhandled": "^1.1.0",
+		"cli-meow-help": "^1.0.4",
+		"cli-welcome": "^2.2.1",
+		"meow": "^7.0.1"
+	},
+	"devDependencies": {
+		"prettier": "^2.0.5"
+	}
+}
