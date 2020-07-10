@@ -75,7 +75,8 @@ const spinner = ora({text: ``});
 		if (res.status === 200) {
 			spinner.succeed(`${g`SCARF`} package added`);
 		} else {
-			spinner.fail(`${r`SCARF`} package addition failed`);
+			spinner.fail(`${r`SCARF`} package addition ${r`FAILED`}`);
+			console.log(`res`, res);
 		}
 	}
 
