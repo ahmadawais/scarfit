@@ -51,6 +51,12 @@ const flags = {
 		default: false,
 		desc: `Don't release a patch on npm`
 	},
+	public: {
+		type: `boolean`,
+		default: false,
+		alias: `p`,
+		desc: `Should npm release have --access public?`
+	},
 	clear: {
 		type: `boolean`,
 		default: true,

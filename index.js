@@ -6,10 +6,10 @@
  *
  * @author Ahmad Awais <https://twitter.com/MrAhmadAwais/>
  */
-// require('dotenv').config();
 const ora = require('ora');
 const execa = require('execa');
 const alert = require('cli-alerts');
+const readPkgUp = require('read-pkg-up');
 const to = require('await-to-js').default;
 const Configstore = require('configstore');
 const scarfPackage = require('scarf-package');
@@ -24,12 +24,15 @@ const ask = require('./utils/ask');
 let pkgName, err, res;
 const input = cli.input;
 const flags = cli.flags;
-const {clear, debug, name, add, dep, git, release} = flags;
+const {clear, debug, name, add, dep, git, release, public} = flags;
 const spinner = ora({text: ``});
 
 (async () => {
 	init({clear});
 	input.includes(`help`) && cli.showHelp(0);
+
+	const pkg = await readPkgUp();
+	const guessedName = pkg && pkg.packageJson && pkg.packageJson.name;
 
 	const config = new Configstore(`scarfit`, {});
 	const username = config.get(`username`);
@@ -53,7 +56,8 @@ const spinner = ora({text: ``});
 
 	if (!name) {
 		pkgName = await ask({
-			message: `Name of the npm package?`
+			message: `Name of the npm package?`,
+			initial: guessedName
 		});
 	}
 
@@ -87,7 +91,9 @@ const spinner = ora({text: ``});
 	if (git) {
 		spinner.start(`${y`GIT`} commit/push…`);
 		[err, res] = await to(execa(`git`, [`add`, `.`]));
-		[err, res] = await to(execa(`git`, [`commit`, `-m="📦 NEW: Analyze"`]));
+		[err, res] = await to(
+			execa(`git`, [`commit`, `-m`, `📦 NEW: Analyze`])
+		);
 		[err, res] = await to(execa(`git`, [`push`]));
 		handleError(`GIT commit/push`, err);
 		spinner.succeed(`${g`GIT`} commit/push`);
@@ -97,11 +103,19 @@ const spinner = ora({text: ``});
 	if (release) {
 		spinner.start(`${y`PATCH`} releasing…`);
 		[err, res] = await to(
-			execa(`npm`, [`version`, `patch`, `-m="🚀 RELEASE: patch"`])
+			execa(`npm`, [`version`, `patch`, `-m`, `🚀 RELEASE: Patch`])
 		);
-		[err, res] = await to(execa(`npm`, [`publish`, `--access`, `public`]));
+
+		if (public) {
+			[err, res] = await to(
+				execa(`npm`, [`publish`, `--access`, `public`])
+			);
+		} else {
+			[err, res] = await to(execa(`npm`, [`publish`]));
+		}
+
 		handleError(`Patch release`, err);
-		spinner.succeed(`${y`PATCH`} released`);
+		spinner.succeed(`${g`PATCH`} released`);
 	}
 
 	alert({
