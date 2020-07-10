@@ -21,7 +21,7 @@
 		"cli-alerts": "^1.2.1",
 		"cli-handle-error": "^4.4.0",
 		"cli-handle-unhandled": "^1.1.0",
-		"cli-meow-help": "^1.0.4",
+		"cli-meow-help": "^2.0.0",
 		"cli-should-cancel": "^1.0.0",
 		"cli-welcome": "^2.2.1",
 		"configstore": "^5.0.1",
