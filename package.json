@@ -24,6 +24,7 @@
 		"cli-meow-help": "^1.0.4",
 		"cli-should-cancel": "^1.0.0",
 		"cli-welcome": "^2.2.1",
+		"configstore": "^5.0.1",
 		"enquirer": "^2.3.6",
 		"execa": "^4.0.3",
 		"meow": "^7.0.1",

@@ -7,6 +7,50 @@ const flags = {
 		alias: `n`,
 		desc: `Name of the npm package`
 	},
+	add: {
+		type: `boolean`,
+		default: true,
+		alias: `d`,
+		desc: `Should add package on scarf.sh`
+	},
+	'no-add': {
+		type: `boolean`,
+		default: false,
+		desc: `Should not add package on scarf.sh`
+	},
+	dep: {
+		type: `boolean`,
+		default: true,
+		alias: `d`,
+		desc: `Should install scarf dependency`
+	},
+	'no-dep': {
+		type: `boolean`,
+		default: false,
+		desc: `Should not install scarf dependency`
+	},
+	git: {
+		type: `boolean`,
+		default: true,
+		alias: `g`,
+		desc: `Should git commit/push`
+	},
+	'no-git': {
+		type: `boolean`,
+		default: false,
+		desc: `Should not git commit/push`
+	},
+	release: {
+		type: `boolean`,
+		default: true,
+		alias: `r`,
+		desc: `Release a patch on npm`
+	},
+	'no-release': {
+		type: `boolean`,
+		default: false,
+		desc: `Don't release a patch on npm`
+	},
 	clear: {
 		type: `boolean`,
 		default: true,
