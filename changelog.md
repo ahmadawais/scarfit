@@ -32,6 +32,18 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [1.0.1](https://github.com/ahmadawais/scarfit/compare/1.0.0...1.0.1)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Sponsor NodeCLI.com [`c2d4fb2`](https://github.com/ahmadawais/scarfit/commit/c2d4fb2d3eee5181f300bdd1c2f3230ff8ec2410) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.0.0](https://github.com/ahmadawais/scarfit/compare/0.0.2...1.0.0)
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
@@ -42,6 +54,7 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
 > 📖 Basic usage [`da9c1cd`](https://github.com/ahmadawais/scarfit/commit/da9c1cd968cc4ff200f65c56b71d02ab5607d6b8) <br>
+> 📖 Changelog [`1eb5979`](https://github.com/ahmadawais/scarfit/commit/1eb5979f8eb3ec257a374bd92fb9e34a0d06fca1) <br>
 
 <br>
 
