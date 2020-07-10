@@ -32,7 +32,34 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [1.0.0](https://github.com/ahmadawais/scarfit/compare/0.0.2...1.0.0)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Checks [`bd4b60d`](https://github.com/ahmadawais/scarfit/commit/bd4b60d06cef733dd34a75b15cb85ca9e309813b) <br>
+> 👌 Access [`bdf5f73`](https://github.com/ahmadawais/scarfit/commit/bdf5f732730b4a120fc046ec8348a6d525e28fcf) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Basic usage [`da9c1cd`](https://github.com/ahmadawais/scarfit/commit/da9c1cd968cc4ff200f65c56b71d02ab5607d6b8) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: 0.0.2
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 First commit [`e3a6962`](https://github.com/ahmadawais/scarfit/commit/e3a696275821cf60c1b9bc0e687575d2161efa9e) <br>
+> 📦 Basic fn [`cb201e7`](https://github.com/ahmadawais/scarfit/commit/cb201e7cd82ab283d535309ca084d79141ead760) <br>
+> 📦 Alert [`1bdde78`](https://github.com/ahmadawais/scarfit/commit/1bdde787f153aafd3130834c2240e31c230442a4) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`4bb8629`](https://github.com/ahmadawais/scarfit/commit/4bb8629dadc423d2f5b86f131d30f3a854c44dbb) <br>
 
 <br>
 
