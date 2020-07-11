@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Scarfit by ahmadawais</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/ahmadawais/scarfit">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Scarfit</h1>
+            <h2>Add scarf analytics to a Node pkg, git commit/push, and release an npm patch</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/ahmadawais/scarfit/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/ahmadawais/scarfit/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p><a href="https://github.com/ahmadawais/scarfit"><img src="./.github/npxscarfit.gif" alt="📟"></a></p>
+<h1>
+<a id="scarfit" class="anchor" href="#scarfit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>scarfit</h1>
+<p><a href="https://www.npmjs.com/package/scarfit"><img src="https://img.shields.io/npm/dt/scarfit?label=DOWNLOADS%20%20%E2%9D%AF&amp;colorA=6A788D&amp;colorB=6A788D&amp;style=flat" alt="DOWNLOADS"></a> <a href="https://NodeCLI.com/?utm_source=FOSS"><img src="https://img.shields.io/badge/-NodeCLI.com-gray.svg?colorB=6A788D&amp;style=flat" alt="Node.js CLI"></a> <a href="https://VSCode.pro/?utm_source=FOSS"><img src="https://img.shields.io/badge/-VSCODE.pro-gray.svg?colorB=6A788D&amp;style=flat" alt="Learn VSCode"></a> <a href="https://github.com/ahmadawais/sponsor?utm_source=FOSS"><img src="https://img.shields.io/badge/-Sponsor-gray.svg?colorB=6A788D&amp;style=flat" alt="Sponsor"></a>
+<a href="https://twitter.com/mrahmadawais/"><img src="https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=6A788D&amp;colorB=6A788D&amp;style=flat" alt="Follow @MrAhmadAwais on Twitter"></a></p>
+<blockquote>
+<p>Add scarf analytics to a Node pkg, git commit/push, and release an npm patch.</p>
+</blockquote>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/install.png" alt="📟"></a></p>
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+<div class="highlight highlight-source-shell"><pre>npx scarfit</pre></div>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/usage.png" alt="⚙️"></a></p>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+<div class="highlight highlight-source-shell"><pre>scarfit <span class="pl-k">&lt;</span>command<span class="pl-k">&gt;</span> [option]</pre></div>
+<h4>
+<a id="-commands" class="anchor" href="#-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>❯ COMMANDS</h4>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">help</span>  Print <span class="pl-c1">help</span> info</pre></div>
+<h4>
+<a id="-options" class="anchor" href="#-options" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>❯ OPTIONS</h4>
+<div class="highlight highlight-source-shell"><pre>-n, --name     Name of the npm package
+-d, --add      Should add package on scarf.sh Default: <span class="pl-c1">true</span>
+--no-add       Should not add package on scarf.sh Default: <span class="pl-c1">false</span>
+-d, --dep      Should install scarf dependency Default: <span class="pl-c1">true</span>
+--no-dep       Should not install scarf dependency Default: <span class="pl-c1">false</span>
+-g, --git      Should git commit/push Default: <span class="pl-c1">true</span>
+--no-git       Should not git commit/push Default: <span class="pl-c1">false</span>
+-r, --release  Release a patch on npm Default: <span class="pl-c1">true</span>
+--no-release   Don<span class="pl-s"><span class="pl-pds">'</span>t release a patch on npm Default: false</span>
+<span class="pl-s">-p, --public   Should npm release have --access public? Default: false</span>
+<span class="pl-s">-c, --clear    Clear the console Default: true</span>
+<span class="pl-s">-d, --debug    Print debug info Default: false</span>
+<span class="pl-s">-v, --version  Print CLI version Default: false</span></pre></div>
+<br>
+<p><a href="changelog.md"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/log.png" alt="📝"></a></p>
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h2>
+<p><a href="changelog.md">❯ Read the changelog here →</a></p>
+<br>
+<p><strong>KEY</strong>: <code>📦 NEW</code>, <code>👌 IMPROVE</code>, <code>🐛 FIX</code>, <code>📖 DOC</code>, <code>🚀 RELEASE</code>, and <code>🤖 TEST</code></p>
+<blockquote>
+<p><em>I use <a href="https://github.com/ahmadawais/Emoji-Log">Emoji-log</a>, you should try it and simplify your git commits.</em></p>
+</blockquote>
+
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/license.png" alt="📃"></a></p>
+<h2>
+<a id="license--conduct" class="anchor" href="#license--conduct" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License &amp; Conduct</h2>
+<ul>
+<li>MIT © <a href="https://twitter.com/MrAhmadAwais/">Ahmad Awais</a>
+</li>
+<li><a href="code-of-conduct.md">Code of Conduct</a></li>
+</ul>
+<br>
+<p><a href="./../../"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/connect.png" alt="🙌"></a></p>
+<h2>
+<a id="connect" class="anchor" href="#connect" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connect</h2>
+<div align="left">
+    <p><a href="https://github.com/ahmadawais"><img alt="GitHub @AhmadAwais" align="center" src="https://img.shields.io/badge/GITHUB-gray.svg?colorB=6cc644&amp;style=flat"></a> <strong>(follow)</strong> To stay up to date on free &amp; open-source software</p>
+    <p><a href="https://twitter.com/MrAhmadAwais/"><img alt="Twitter @MrAhmadAwais" align="center" src="https://img.shields.io/badge/TWITTER-gray.svg?colorB=1da1f2&amp;style=flat"></a> <strong>(follow)</strong> To get #OneDevMinute daily hot tips &amp; trolls</p>
+    <p><a href="https://www.youtube.com/AhmadAwais"><img alt="YouTube AhmadAwais" align="center" src="https://img.shields.io/badge/YOUTUBE-gray.svg?colorB=ff0000&amp;style=flat"></a> <strong>(subscribe)</strong> To tech talks &amp; #OneDevMinute videos</p>
+    <p><a href="https://AhmadAwais.com/"><img alt="Blog: AhmadAwais.com" align="center" src="https://img.shields.io/badge/MY%20BLOG-gray.svg?colorB=4D2AFF&amp;style=flat"></a> <strong>(read)</strong> In-depth &amp; long form technical articles</p>
+    <p><a href="https://www.linkedin.com/in/MrAhmadAwais/"><img alt="LinkedIn @MrAhmadAwais" align="center" src="https://img.shields.io/badge/LINKEDIN-gray.svg?colorB=0077b5&amp;style=flat"></a> <strong>(connect)</strong> On the LinkedIn profile y'all</p>
+</div>
+<br>
+<p><a href="https://github.com/AhmadAwais/sponsor"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/sponsor.png" alt="👌"></a></p>
+<h2>
+<a id="sponsor" class="anchor" href="#sponsor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sponsor</h2>
+<p>Me (<a href="https://twitter.com/mrahmadawais/">Ahmad Awais</a>) and my incredible wife (<a href="https://twitter.com/MaedahBatool/">Maedah Batool</a>) are two engineers who fell in love with open source and then with each other. You can read more <a href="https://ahmadawais.com/about">about me here</a>. If you or your company use any of my projects or like what I’m doing then consider backing me. I'm in this for the long run. An open-source developer advocate.</p>
+<p><a href="https://twitter.com/mrahmadawais/"><img src="https://img.shields.io/twitter/follow/mrahmadawais.svg?style=social&amp;label=Follow%20@MrAhmadAwais" alt="Ahmad on Twitter"></a></p>
+<h3>
+<a id="nodeclicom--learn-to-build-nodejs-cli-automation" class="anchor" href="#nodeclicom--learn-to-build-nodejs-cli-automation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://NodeCLI.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=ahmadawais/scarfit">NodeCLI.com</a> — Learn to build Node.js CLI Automation</h3>
+<blockquote>
+<p>This repository is part of the <a href="https://NodeCLI.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=ahmadawais/scarfit">NodeCLI.com</a> course.</p>
+</blockquote>
+<p>After building hundreds of developer automation tools used by millions of developers, I am sharing exactly how you can do it yourself with minimum effective effort. Learn to build Node.js &amp; JavaScript based CLI (Command Line Interface) apps. Automate the grunt work, do more in less time, impress your manager, and help the community.
+→ I'm sharing it all in this online video course. <a href="https://NodeCLI.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=ahmadawais/scarfit">Node CLI Automation
+without wasting a 1,000 hours</a> →</p>
+<p><a href="https://NodeCLI.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=ahmadawais/scarfit"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/nodecli/featured.jpg" alt="Node CLI Course"></a></p>
+<p><a href="https://NodeCLI.com?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=ahmadawais/scarfit"><img src="https://img.shields.io/badge/-NodeCLI.com%20%E2%86%92-gray.svg?colorB=488640&amp;style=flat" alt="Node CLI"></a></p>
+<p><a href="https://github.com/AhmadAwais/sponsor"><img src="https://raw.githubusercontent.com/ahmadawais/stuff/master/sponsor/sponsor.jpg" alt="Awais on Twitter"></a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/ahmadawais">ahmadawais</a> can be found on <a href="https://github.com/ahmadawais/scarfit">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
