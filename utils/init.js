@@ -9,7 +9,7 @@ module.exports = ({clear = true}) => {
 		tagLine: `by Awais.dev`,
 		description: pkg.description,
 		version: pkg.version,
-		bgColor: '#6cc24a',
+		bgColor: '#0cbccd',
 		color: '#000000',
 		bold: true,
 		clear
