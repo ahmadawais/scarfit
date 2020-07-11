@@ -14,7 +14,7 @@ const to = require('await-to-js').default;
 const Configstore = require('configstore');
 const scarfPackage = require('scarf-package');
 const handleError = require('cli-handle-error');
-const {green: g, yellow: y, red: r} = require('chalk');
+const {green: g, yellow: y, red: r, blue: b} = require('chalk');
 
 const init = require('./utils/init');
 const cli = require('./utils/cli');
@@ -78,7 +78,9 @@ const spinner = ora({text: ``});
 			res.status === 400 &&
 			res.data === `'${options.name}' is not an available package name`
 		) {
-			spinner.info(`${r`SCARF`} '${options.name}' already exists`);
+			spinner.info(
+				`${b`SCARF`} package '${options.name}' already exists`
+			);
 		} else {
 			spinner.fail(`${r`SCARF`} package addition ${r`FAILED`}`);
 		}
