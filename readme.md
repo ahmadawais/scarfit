@@ -23,6 +23,8 @@ npx scarfit
 
 ## Usage
 
+Run `scarfit` in a pre-existing npm package that must have a git repository and a published version on npmjs.com.
+
 ```sh
 scarfit <command> [option]
 ```
