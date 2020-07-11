@@ -64,19 +64,23 @@ const spinner = ora({text: ``});
 	// 1. Add package to scarf.
 	if (add) {
 		spinner.start(`${y`SCARF`} package adding…`);
-		[err, res] = await to(
-			scarfPackage({
-				name: name ? name : pkgName,
-				username: config.get(`username`),
-				apiToken: config.get(`apiToken`)
-			})
-		);
+		const options = {
+			name: name ? name : pkgName,
+			username: config.get(`username`),
+			apiToken: config.get(`apiToken`)
+		};
+		[err, res] = await to(scarfPackage(options));
 		handleError(`SCARF add package`, err);
+
 		if (res.status === 200) {
 			spinner.succeed(`${g`SCARF`} package added`);
+		} else if (
+			res.status === 400 &&
+			res.data === `'${options.name}' is not an available package name`
+		) {
+			spinner.warn(`${r`SCARF`} '${options.name}' already exists`);
 		} else {
 			spinner.fail(`${r`SCARF`} package addition ${r`FAILED`}`);
-			console.log(`res`, res);
 		}
 	}
 
