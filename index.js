@@ -78,7 +78,7 @@ const spinner = ora({text: ``});
 			res.status === 400 &&
 			res.data === `'${options.name}' is not an available package name`
 		) {
-			spinner.warn(`${r`SCARF`} '${options.name}' already exists`);
+			spinner.info(`${r`SCARF`} '${options.name}' already exists`);
 		} else {
 			spinner.fail(`${r`SCARF`} package addition ${r`FAILED`}`);
 		}
