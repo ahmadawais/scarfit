@@ -32,11 +32,28 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [1.3.0](https://github.com/ahmadawais/scarfit/compare/1.2.0...1.3.0)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Warn [`67d71ea`](https://github.com/ahmadawais/scarfit/commit/67d71ea91a08a03218a54176cd9b88da6ba3d91b) <br>
+> 👌 Info [`3a125eb`](https://github.com/ahmadawais/scarfit/commit/3a125eb5eeb85965df305d37e8c7f90b6e26f163) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.2.0](https://github.com/ahmadawais/scarfit/compare/1.1.1...1.2.0)
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
 > 👌 API auth [`f55b563`](https://github.com/ahmadawais/scarfit/commit/f55b563d1e2bc8292825321a5c93abec83a29bec) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`7f88e91`](https://github.com/ahmadawais/scarfit/commit/7f88e91fed67d7fe3b072fb1570e1d0b60acacbd) <br>
 
 <br>
 
