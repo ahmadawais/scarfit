@@ -32,11 +32,31 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [1.5.0](https://github.com/ahmadawais/scarfit/compare/1.4.0...1.5.0)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Color [`317a888`](https://github.com/ahmadawais/scarfit/commit/317a888d9cda0630451aef84f37342b342ad934f) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 GIF [`c82e16e`](https://github.com/ahmadawais/scarfit/commit/c82e16ed5f6b5af853831e97a73c456e3b749aea) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [1.4.0](https://github.com/ahmadawais/scarfit/compare/1.3.0...1.4.0)
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
 > 👌 Format [`36c0b40`](https://github.com/ahmadawais/scarfit/commit/36c0b40459186e2e856a9129b8c5e8de8ae18a25) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`2384678`](https://github.com/ahmadawais/scarfit/commit/238467829b2969a8b440d487d99a02f446bc0a17) <br>
 
 <br>
 
